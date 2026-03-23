@@ -78,3 +78,14 @@ The browser receives the data, reconstructs the page, and renders it.
 - TCP: Establishes reliable connection
 - TLS: Secures communication (for HTTPS)
 - HTTP: Transfers webpage data
+
+---
+### Common HLD Interview Questions
+
+**Q1: Why are network protocols strictly necessary in distributed systems?**
+*Answer:* Protocols provide standard rules for communication. Without them, devices running different OS or hardware wouldn't understand data handling. 
+*Example:* When a mobile app (client) talks to an AWS server, they both use HTTP. Without HTTP rules, the server wouldn't know where the headers end and the body begins.
+
+**Q2: How do standardized protocols aid in horizontal scaling?**
+*Answer:* Standardized protocols decouple components, allowing interchangeable commodity servers. 
+*Example:* A Load Balancer can blindly forward TCP traffic to 100 different backend servers without needing custom code for each server, as long as they all speak TCP.

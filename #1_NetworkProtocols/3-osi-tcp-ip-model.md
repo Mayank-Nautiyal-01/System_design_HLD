@@ -1,12 +1,12 @@
-🌟When two systems communicate over a network, the communication is organized into layers.
+When two systems communicate over a network, the communication is organized into layers.
 
 Each layer has a specific responsibility, which makes networking systems easier to design, maintain, and scale.
 
 Two major models describe this layered architecture:
 
-➡️OSI Model
+OSI Model
 
-➡️TCP/IP Model
+TCP/IP Model
 ------------------------
 
 ques> Why Layered Networking Exists
@@ -31,7 +31,7 @@ Network doesn't care about HTTP
 Each layer solves one part of communication.
 ------------------------
 
-⭐⭐osi model(7 layer):
+OSI model (7 layers):
 The OSI model has 7 layers, and each layer performs a specific job while sending the request from your laptop to the server.
 
 7>Application
@@ -42,7 +42,7 @@ The OSI model has 7 layers, and each layer performs a specific job while sending
 2>Data Link
 1>Physical
 
-💠💠7> Application layer: This is where applications interact with the networks.
+7> Application layer: This is where applications interact with the networks.
 ex of protocols: http,dns,smtp etc
 
 ex: we type: youtube.com
@@ -53,7 +53,7 @@ ex: we type: youtube.com
   -befor contacting the server ,our system asks dns for the ip address.
   youtube.com->142.250.x.x --> now the request is ready to travel.
 
-💠💠6> Presentation layer:
+6> Presentation layer:
     This layer handles data formatting, encryption, and compression.
 
 Example:
@@ -75,9 +75,9 @@ Data format conversion
 
 Example:
 
-Plain HTTP → Encrypted HTTPS
+Plain HTTP -> Encrypted HTTPS
 
-💠💠5️> Session Layer
+5> Session Layer
 
 This layer manages sessions between two systems.
 
@@ -87,7 +87,7 @@ Example:
 
 When you log in to YouTube:
 
-Browser ↔ Server session maintained
+Browser <-> Server session maintained
 
 Session technologies include:
 
@@ -119,20 +119,20 @@ Example
 
 TCP creates a connection using the 3-way handshake:
 
-Client → SYN
-Server → SYN-ACK
-Client → ACK
+Client -> SYN
+Server -> SYN-ACK
+Client -> ACK
 
 Ports are also assigned.
 
 Example:
 
-HTTPS → port 443
-HTTP → port 80
+HTTPS -> port 443
+HTTP -> port 80
 
 Now the data can travel safely.
 
-💠💠3️> Network Layer
+3> Network Layer
 
 This layer handles routing across networks.
 
@@ -150,16 +150,16 @@ Routers across the internet read the destination IP and forward the packet.
 Path example:
 
 Laptop
- ↓
+ v
 Home Router
- ↓
+ v
 ISP Network
- ↓
+ v
 Internet Routers
- ↓
+ v
 YouTube Data Center
 
-💠💠2️> Data Link Layer
+2> Data Link Layer
 
 This layer handles communication within the local network.
 
@@ -185,7 +185,7 @@ Ethernet
 
 WiFi
 
-💠💠1️> Physical Layer
+1> Physical Layer
 
 This layer transmits raw bits through physical mediums.
 
@@ -203,23 +203,23 @@ The data becomes:
 
 These bits travel to the next device.
 
---> 💠Full Journey of Your Request
+Full journey of your request:
 
 Your request travels down the layers:
 
-Application → HTTP request
-Presentation → encryption
-Session → session management
-Transport → TCP segment
-Network → IP packet
-Data Link → Ethernet frame
-Physical → bits over cable/WiFi
+Application -> HTTP request
+Presentation -> encryption
+Session -> session management
+Transport -> TCP segment
+Network -> IP packet
+Data Link -> Ethernet frame
+Physical -> bits over cable/WiFi
 
-💠At the server, the process reverses layer by layer.
+At the server, the process reverses layer by layer.
 
 -----------------------------
 
-⭐⭐TCP/IP Model:
+TCP/IP Model:
 The TCP/IP model has 4 layers:
 
 Application
@@ -236,9 +236,7 @@ Network Access
 
 These layers work together to send data across the internet.
 
---->
-
-💠💠1>Application Layer
+1> Application Layer
 
 (Where applications talk to the network)
 
@@ -260,7 +258,7 @@ youtube.com
 
 Browser asks DNS for IP:
 
-youtube.com → 142.250.x.x
+youtube.com -> 142.250.x.x
 
 Browser creates HTTP request:
 
@@ -277,7 +275,7 @@ encryption
 
 request formatting
 
-💠💠2️> Transport Layer
+2> Transport Layer
 
 (Communication between applications)
 
@@ -293,13 +291,13 @@ What happens here
 
 TCP establishes a connection using the 3-way handshake.
 
-Client → SYN
-Server → SYN-ACK
-Client → ACK
+Client -> SYN
+Server -> SYN-ACK
+Client -> ACK
 
 After connection:
 
-HTTP request → sent as TCP segments
+HTTP request -> sent as TCP segments
 
 TCP ensures:
 
@@ -313,8 +311,9 @@ Ports are also used here.
 
 Example:
 
-HTTPS → port 443
-💠💠3️> Internet Layer
+HTTPS -> port 443
+
+3> Internet Layer
 
 (Routing across the internet)
 
@@ -334,18 +333,18 @@ Routers across the internet read the destination IP and forward the packet.
 Example route:
 
 Laptop
- ↓
+ v
 Home Router
- ↓
+ v
 ISP
- ↓
+ v
 Internet routers
- ↓
+ v
 YouTube data center
 
 This layer decides how packets travel across networks.
 
-💠💠4️> Network Access Layer
+4> Network Access Layer
 
 (Local network + physical transmission)
 
@@ -361,7 +360,7 @@ Fiber optics
 
 Example inside your home network:
 
-Laptop → WiFi → Router
+Laptop -> WiFi -> Router
 
 Your device uses a MAC address to send data to the router.
 
@@ -370,3 +369,14 @@ Example MAC:
 00:1A:2B:3C:4D:5E
 
 The data is then transmitted as electrical signals or radio waves.
+
+---
+### Common HLD Interview Questions
+
+**Q1: As a Backend System Design engineer, which OSI layers do you primarily focus on?**
+*Answer:* You focus heavily on Layer 7 (Application) to design APIs and Layer 4 (Transport) to decide on data delivery mechanisms.
+*Example:* You focus on Application layer when choosing between REST (HTTP) vs gRPC, and Transport layer when choosing between TCP for reliability or UDP for speed.
+
+**Q2: How does a Layer 7 Load Balancer differ from a Layer 4 Load Balancer?**
+*Answer:* Layer 4 routes purely based on IP/Port. Layer 7 inspects the content and routes based on URL paths or headers.
+*Example:* A Layer 7 LB can route requests for `example.com/api` to Node.js servers and `example.com/images` to an AWS S3 bucket.
