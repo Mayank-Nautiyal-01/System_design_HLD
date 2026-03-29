@@ -118,6 +118,8 @@ After the sleep window expires, the Circuit Breaker cautiously allows **one sing
   Circuit goes back to CLOSED. Everything works normally again.
 ```
 
+![Circuit Breaker Pattern Architecture](../../assets/architecture/circuit_breaker_pattern.png)
+
 **The big idea:** A Circuit Breaker stops your healthy services from being dragged down by a broken one. Only the broken feature goes down — everything else keeps running.
 
 

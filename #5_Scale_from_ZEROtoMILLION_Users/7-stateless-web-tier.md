@@ -57,6 +57,8 @@ Result: Seamless experience on ANY server.
           +----------------------------+
 ```
 
+![Stateless Web Tier Architecture](../../assets/architecture/stateless_web_tier.png)
+
 ---
 
 ### Two Main Approaches for Session Management

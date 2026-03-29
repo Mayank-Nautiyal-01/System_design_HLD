@@ -38,6 +38,8 @@ The client **never knows** which backend server actually handled their request.
            +--------------------+
 ```
 
+![Load Balancer Architecture](../../assets/architecture/load_balancer_architecture.png)
+
 **Security Benefit:** App Servers now have **private IPs only** and are invisible to the public internet.
 
 ---

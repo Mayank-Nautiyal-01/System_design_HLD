@@ -39,6 +39,8 @@ The fix: **Physically separate the database onto its own server.**
          +------------------------+
 ```
 
+![Database Separation Architecture](../../assets/architecture/database_separation.png)
+
 **Key Point:** The Database Server lives on a **private internal network** (VPC — Virtual Private Cloud). It has no public IP. Only the App Server can reach it. This is a massive security improvement.
 
 ---

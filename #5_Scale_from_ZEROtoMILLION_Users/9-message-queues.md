@@ -62,6 +62,8 @@ Worker picks up task from Queue
      [ Worker ] [ Worker ]  ← Horizontally scalable
 ```
 
+![Message Queue Architecture](../../assets/architecture/message_queue_architecture.png)
+
 The **Queue** is the middleman. The App Server is the **Producer** (writes). Workers are **Consumers** (read/process).
 
 ---

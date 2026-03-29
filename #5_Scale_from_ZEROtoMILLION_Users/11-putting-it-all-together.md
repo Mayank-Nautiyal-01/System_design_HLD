@@ -62,13 +62,16 @@ This is the capstone of the entire series. Every architectural decision we've ma
 ════════════════════════════════════════════════════════════════════════
 ```
 
+![Complete 1 Million User Architecture](../../assets/architecture/complete_million_user_architecture.png)
+
 ---
 
 ## Step-by-Step: How a Request Flows Through This System
 
 **Scenario:** User Alice in Mumbai visits QuickBite to view the menu and place an order.
 
-1. **DNS Resolution:** GeoDNS returns IP of Mumbai Load Balancer (lowest latency).
+1. **DNS Resolution:**
+ GeoDNS returns IP of Mumbai Load Balancer (lowest latency).
 2. **CDN Loading:** Static assets (logo, CSS) served from Mumbai edge node (5ms).
 3. **API Request:** Alice clicks "Menu." Request hits Mumbai LB → App Server.
 4. **Cache Hit:** App server checks Redis. Result found. Return JSON in 0.5ms.

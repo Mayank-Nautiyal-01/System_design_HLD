@@ -47,6 +47,8 @@ If reads dominate, you can massively increase read capacity by adding Read Repli
 +----------+      +----------+
 ```
 
+![Database Replication Architecture](../../assets/architecture/database_replication.png)
+
 ### How the Replication Stream Works
 1. App writes (`INSERT`, `UPDATE`, `DELETE`) go to the **Primary** only.
 2. The Primary logs every change to its **Binary Log** (MySQL) or **WAL — Write-Ahead Log** (PostgreSQL).

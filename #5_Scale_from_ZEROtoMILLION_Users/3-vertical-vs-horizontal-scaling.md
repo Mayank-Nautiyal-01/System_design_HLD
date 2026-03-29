@@ -61,6 +61,8 @@ BEFORE (Scale Out):             AFTER (Scale Out):
 1 server                        3 servers (3x capacity)
 ```
 
+![Vertical vs Horizontal Scaling](../../assets/architecture/vertical_vs_horizontal_scaling.png)
+
 **Real-World Analogy:** Instead of widening 1 road, horizontal scaling = building 8 parallel 1-lane roads. Traffic is spread across all of them.
 
 **Real Example:** Netflix doesn't run on a handful of giant servers. They run on *tens of thousands* of small commodity AWS EC2 instances, each handling a slice of total traffic.

@@ -27,6 +27,8 @@ Shard 0 (userID % 3 == 0)    Shard 1 (userID % 3 == 1)    Shard 2 (userID % 3 ==
 +-----------------------+    +-----------------------+    +-----------------------+
 ```
 
+![Database Sharding Architecture](../../assets/architecture/database_sharding.png)
+
 ---
 
 ### Sharding Strategies
