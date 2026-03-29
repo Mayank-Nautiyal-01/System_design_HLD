@@ -36,7 +36,7 @@ Everything lives together on a single box.
      +------------------------------------------+
 ```
 
-![Single Server Setup Architecture](../../assets/architecture/single_server_setup.png)
+![Single Server Setup Architecture](./assets/single_server_setup.png)
 
 **Real-World Example:** You build a food ordering app called *QuickBite*. You deploy it on a single $5/month DigitalOcean Droplet (1 CPU, 1GB RAM). Your app server (Express.js), database (SQLite), and all your food images are on that single machine.
 

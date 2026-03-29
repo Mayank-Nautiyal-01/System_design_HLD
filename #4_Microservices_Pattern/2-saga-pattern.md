@@ -156,7 +156,7 @@ A dedicated **Saga Orchestrator** service explicitly tells each participant serv
                                                 → Everything is clean again 🔄
 ```
 
-![Saga Pattern Architecture](../../assets/architecture/saga_pattern_architecture.png)
+![Saga Pattern Architecture](./assets/saga_pattern_architecture.png)
 
 **The big idea:** The Coordinator keeps a record of every step. If something breaks halfway, it knows exactly which steps to undo — like Ctrl+Z for your entire business process.
 

@@ -62,7 +62,7 @@ This is the capstone of the entire series. Every architectural decision we've ma
 ════════════════════════════════════════════════════════════════════════
 ```
 
-![Complete 1 Million User Architecture](../../assets/architecture/complete_million_user_architecture.png)
+![Complete 1 Million User Architecture](./assets/complete_million_user_architecture.png)
 
 ---
 

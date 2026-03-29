@@ -20,7 +20,7 @@ User 3, 4, 5... (same) → Cache HIT → 0.5ms → Response [YES]
 
 If 1000 users request the same data, and the answer is in cache, your DB only runs the query **once**. 99.9% of the work is eliminated.
 
-![Caching Flow Architecture](../../assets/architecture/caching_flow.png)
+![Caching Flow Architecture](./assets/caching_flow.png)
 
 ---
 

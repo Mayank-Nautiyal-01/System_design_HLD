@@ -51,7 +51,7 @@ ALL of the above users → DOWN [NO]
                         +-------------------+
 ```
 
-![Multi-Region Architecture](../../assets/architecture/multi_region_architecture.png)
+![Multi-Region Architecture](./assets/multi_region_architecture.png)
 
 Each data center (DC) has a full stack: Load Balancer, App Servers, Redis Cache, and a DB Replica. Users are routed to the **geographically nearest** data center.
 

@@ -23,7 +23,7 @@ When a request arrives, the API Gateway intelligently routes it to the correct h
              +-----> [ Cart Service (10.0.0.9) ]
 ```
 
-![API Gateway and Service Discovery Architecture](../../assets/architecture/api_gateway_service_discovery.png)
+![API Gateway and Service Discovery Architecture](./assets/api_gateway_service_discovery.png)
 
 **Beyond routing, the API Gateway handles critical Cross-Cutting Concerns:**
 - **Authentication:** Validates the JWT token centrally so the underlying 50 microservices don't have to write their own auth code.

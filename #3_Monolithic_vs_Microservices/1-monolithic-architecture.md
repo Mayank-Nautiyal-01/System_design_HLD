@@ -21,7 +21,7 @@ In a true monolith, everything from the User Interface (UI), business logic (pay
         [( Single Database )]
 ```
 
-![Monolithic Architecture](../../assets/architecture/monolithic_architecture.png)
+![Monolithic Architecture](./assets/monolithic_architecture.png)
 
 ## Advantages
 1. **Simple to Develop:** You open one IDE window, write the code, and everything is right there. No network calls to worry about.

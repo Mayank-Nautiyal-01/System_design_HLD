@@ -20,7 +20,7 @@ Each microservice implements exactly one specific business capability (e.g., a "
  [(User DB)]      [(Cart DB)]      [(Payment DB)]
 ```
 
-![Microservices Architecture](../../assets/architecture/microservices_architecture.png)
+![Microservices Architecture](./assets/microservices_architecture.png)
 
 ## Advantages
 1. **Independent Scaling:** If Black Friday traffic spikes, you can spin up 100 copies of the "Checkout Service" without touching the "Review Service." 

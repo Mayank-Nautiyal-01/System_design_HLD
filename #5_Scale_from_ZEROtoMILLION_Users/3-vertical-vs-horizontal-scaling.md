@@ -61,7 +61,7 @@ BEFORE (Scale Out):             AFTER (Scale Out):
 1 server                        3 servers (3x capacity)
 ```
 
-![Vertical vs Horizontal Scaling](../../assets/architecture/vertical_vs_horizontal_scaling.png)
+![Vertical vs Horizontal Scaling](./assets/vertical_vs_horizontal_scaling.png)
 
 **Real-World Analogy:** Instead of widening 1 road, horizontal scaling = building 8 parallel 1-lane roads. Traffic is spread across all of them.
 

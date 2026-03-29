@@ -47,7 +47,7 @@ If reads dominate, you can massively increase read capacity by adding Read Repli
 +----------+      +----------+
 ```
 
-![Database Replication Architecture](../../assets/architecture/database_replication.png)
+![Database Replication Architecture](./assets/database_replication.png)
 
 ### How the Replication Stream Works
 1. App writes (`INSERT`, `UPDATE`, `DELETE`) go to the **Primary** only.

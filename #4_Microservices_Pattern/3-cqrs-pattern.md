@@ -143,7 +143,7 @@ The Write DB becomes an **append-only event log** (Kafka or a specialized event 
                    (happens automatically, takes ~1 second)
 ```
 
-![CQRS Architecture](../../assets/architecture/cqrs_architecture.png)
+![CQRS Architecture](./assets/cqrs_architecture.png)
 
 **The big idea:** Posting (writing) and reading the feed are two very different jobs. CQRS gives each job its own dedicated database — one built for safety, one built for speed. It's like having a chef who only cooks, and a waiter who only serves. Each is perfect at their one job.
 
